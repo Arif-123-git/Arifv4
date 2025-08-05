@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 39% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 39% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 39% 11%;
+
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 142 27% 84%;
+    --secondary-foreground: 220 39% 11%;
+
+    --muted: 142 27% 96%;
+    --muted-foreground: 220 14% 46%;
+
+    --accent: 142 27% 92%;
+    --accent-foreground: 220 39% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 142 27% 84%;
+    --input: 142 27% 84%;
+    --ring: 142 76% 36%;
+
+    --radius: 0.75rem;
+
+    /* Rainbow gradients */
+    --rainbow-1: 0 100% 67%; /* Red */
+    --rainbow-2: 39 100% 50%; /* Orange */
+    --rainbow-3: 60 100% 50%; /* Yellow */
+    --rainbow-4: 120 100% 40%; /* Green */
+    --rainbow-5: 200 100% 50%; /* Blue */
+    --rainbow-6: 260 100% 60%; /* Indigo */
+    --rainbow-7: 300 100% 70%; /* Violet */
+
+    --sidebar-background: 142 27% 96%;
+    --sidebar-foreground: 220 39% 11%;
+    --sidebar-primary: 142 76% 36%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 100%;
+    --sidebar-accent-foreground: 220 39% 11%;
+    --sidebar-border: 142 27% 84%;
+    --sidebar-ring: 142 76% 36%;
+  }
+
+  .dark {
+    --background: 220 39% 11%;
+    --foreground: 0 0% 100%;
+
+    --card: 213 31% 18%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 213 31% 18%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 142 76% 50%;
+    --primary-foreground: 220 39% 11%;
+
+    --secondary: 142 31% 25%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 142 31% 25%;
+    --muted-foreground: 142 31% 70%;
+
+    --accent: 142 31% 25%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 142 31% 25%;
+    --input: 142 31% 25%;
+    --ring: 142 76% 50%;
+    
+    /* Rainbow gradients for dark mode */
+    --rainbow-1: 0 85% 60%; /* Red */
+    --rainbow-2: 39 85% 55%; /* Orange */
+    --rainbow-3: 60 85% 55%; /* Yellow */
+    --rainbow-4: 120 70% 45%; /* Green */
+    --rainbow-5: 200 85% 60%; /* Blue */
+    --rainbow-6: 260 85% 65%; /* Indigo */
+    --rainbow-7: 300 85% 75%; /* Violet */
+    
+    --sidebar-background: 142 31% 18%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 142 76% 50%;
+    --sidebar-primary-foreground: 220 39% 11%;
+    --sidebar-accent: 142 31% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 142 31% 25%;
+    --sidebar-ring: 142 76% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
